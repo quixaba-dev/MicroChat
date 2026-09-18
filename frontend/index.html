@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#09090f">
+  <title>MicroChat</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <main class="app-shell">
+    <aside class="sidebar">
+      <a class="brand" href="/" aria-label="MicroChat inicial"><span class="brand-mark">✦</span> MicroChat</a>
+      <button id="new-chat" class="new-chat"><span>＋</span> Nova conversa</button>
+      <div class="sidebar-copy"><span class="status-dot"></span> Groq conectado<br><small>Seu histórico fica neste navegador.</small></div>
+    </aside>
+    <section class="chat">
+      <header class="chat-header"><div><p class="eyebrow">ASSISTENTE DE IA</p><h1>Como posso ajudar?</h1></div><span class="model-pill">Groq</span></header>
+      <div id="messages" class="messages" aria-live="polite">
+        <article class="message assistant"><div class="avatar">✦</div><div class="bubble">Olá! Sou o MicroChat. Mande uma ideia, uma pergunta ou algo que você queira criar.</div></article>
+      </div>
+      <form id="chat-form" class="composer">
+        <textarea id="prompt" rows="1" maxlength="2000" placeholder="Envie uma mensagem..." aria-label="Mensagem"></textarea>
+        <button id="send" type="submit" aria-label="Enviar mensagem"><span>↑</span></button>
+        <p>MicroChat pode cometer erros. Confira informações importantes.</p>
+      </form>
+    </section>
+  </main>
+  <script src="/api.js"></script>
+</body>
+</html>

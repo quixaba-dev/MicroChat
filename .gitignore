@@ -1,0 +1,12 @@
+# Credenciais locais — nunca publique este arquivo.
+config.py
+
+# Artefatos do MicroPython e editor
+__pycache__/
+*.py[cod]
+.micropico
+.vscode/
+
+# Sistema operacional
+.DS_Store
+Thumbs.db
